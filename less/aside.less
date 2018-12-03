@@ -1,0 +1,86 @@
+//侧边栏
+.aside {
+    width: 180px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #2F4050;
+    z-index: 1031;
+    .profile{
+        height: 170px;
+        background-color: #243443;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 80px;
+            border: 3px solid rgba(255,255,255,0.5);
+        }
+        span{
+            display: block;
+            padding-top: 10px;
+            color: #A9B0C2;
+        }
+    }
+    .menu{
+        padding: 30px 0 0 0;
+        ul{
+            li{
+                box-sizing: border-box;
+                a{
+                    display: block;
+                    padding: 13px 8px 13px 35px;
+                    font-size: 15px;
+                    color: #a9b0c2; 
+                    line-height: 1;  
+                    i{
+                        margin-right: 8px;
+                        
+                    } 
+                    i:nth-child(2){
+                        float: right;
+                        font-weight: 400;
+                    }              
+                }
+                a.active{
+                    color: #ffffff;
+                    background: #243443;
+                }
+                ul{
+                    li{
+                        a{
+                            padding-left: 65px;
+                        }
+                    }
+                }
+                
+            }
+            li:hover {
+                color: #ffffff;
+                background: #243443;
+            }
+            
+        }
+    }
+}
+
+.main {
+    //父盒子剩余的宽度
+    width: auto;
+    height: 600px;
+    //给左边的导航栏留出一定的宽度
+    
+    
+    margin-left: 180px;
+    .container-fluid{
+        padding-left: 180px;
+        background-color: #ffffff;
+        div{
+            a{
+                color: #333333;
+            }
+        }
+    }
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>阿里百秀-用户管理</title>
+		<link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet/less" href="less/aside.less" />
+		<link rel="stylesheet/less" href="less/index.less" />
+		<script type="text/javascript" src="assets/less.min.js"></script>
+		<script type="text/javascript" src="assets/jQuery/jquery.js"></script>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<!--侧边栏-->
+			<div class="aside">
+				<!--个人信息-->
+				<div class="profile">
+					<img src="img/monkey.png" alt="" class="img-circle" />
+					<span>布头儿</span>
+				</div>
+				<!--导航-->
+				<div class="menu">
+					<ul class="list-unstyled list-group">
+						<li>
+							<a href="javascript:;"><i class="fa fa-navicon"></i>仪表盘</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="active"><i class="fa fa-user"></i>用户管理</a>
+						</li>
+						<li>
+							<a href="javascript:;"><i class="fa fa-book"></i>讲师管理</a>
+						</li>
+						<li>
+							<a href="javasecript:;"><i class="fa fa-leanpub"></i>课程管理<i class="fa fa-chevron-down"></i></a>
+							<ul class="hidden list-unstyled">
+								<li>
+									<a href="javasecript:;">课程添加</a>
+								</li>
+								<li>
+									<a href="javasecript:;">课程列表</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javasecript:;"><i class="fa fa-simplybuilt"></i>广告管理</a>
+						</li>
+						<li>
+							<a href="javasecript:;"><i class="fa fa-gears"></i>系统设置<i class="fa fa-chevron-down"></i></a>
+							<ul class="hidden list-unstyled">
+								<li>
+									<a href="javasecript:;">系统更正</a>
+								</li>
+								<li>
+									<a href="javasecript:;">系统详情</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--右边页面内容的编写-->
+			<div class="main">
+				<!--顶部导航条，包含个人中心和退出功能，用到了bootstrap的导航条-->
+				<div class="container-fluid navbar-fixed-top">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">阿里百秀</a>
+					</div>
+					<div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="profile.html"><i class="fa fa-user"></i>个人中心</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-sign-out"></i>退出</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--内容提示条，用到了bootstrap的路径导航-->
+				<ol class="breadcrumb">
+					<li>
+						<a href="#">用户管理</a>
+					</li>
+					<li>
+						<a href="#">用户列表</a>
+					</li>
+				</ol>
+				<!--用户列表信息-->
+				<div class="user-list">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<form class="form-inline pull-left">
+								<div class="form-group">
+									<select class="form-control input-sm">
+										<option>按地区</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<select class="form-control input-sm">
+										<option>按地区</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<select class="form-control input-sm">
+										<option>按地区</option>
+									</select>
+								</div>
+								<button class="btn btn-success btn-sm">搜索</button>
+							</form>
+							<form class="form-inline pull-right">
+								<div class="input-group input-group-sm">
+									<input type="text" class="form-control" placeholder="Search for...">
+									<span class="input-group-btn">
+        					<button class="btn btn-success" type="button">搜索</button>
+      					</span>
+								</div>
+							</form>
+						</div>
+
+						<!-- Table -->
+						<table class="table table-bordered text-center table-hover table-striped">
+							<thead>
+								<tr>
+									<td>编号</td>
+									<td>账号</td>
+									<td>姓名</td>
+									<td>年龄</td>
+									<td>性别</td>
+									<td>地区</td>
+									<td>手机号</td>
+									<td>操作</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>ldd@qq.com</td>
+									<td>ldd</td>
+									<td>23</td>
+									<td>女</td>
+									<td>河南</td>
+									<td>123243445</td>
+									<td>
+										<a class="btn btn-info btn-xs">操作</a>
+										<a class="btn btn-warning btn-xs">删除</a>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>ldd@qq.com</td>
+									<td>ldd</td>
+									<td>23</td>
+									<td>女</td>
+									<td>河南</td>
+									<td>123243445</td>
+									<td>
+										<a class="btn btn-info btn-xs">操作</a>
+										<a class="btn btn-warning btn-xs">删除</a>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>ldd@qq.com</td>
+									<td>ldd</td>
+									<td>23</td>
+									<td>女</td>
+									<td>河南</td>
+									<td>123243445</td>
+									<td>
+										<a class="btn btn-info btn-xs">操作</a>
+										<a class="btn btn-warning btn-xs">删除</a>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>ldd@qq.com</td>
+									<td>ldd</td>
+									<td>23</td>
+									<td>女</td>
+									<td>河南</td>
+									<td>123243445</td>
+									<td>
+										<a class="btn btn-info btn-xs">操作</a>
+										<a class="btn btn-warning btn-xs">删除</a>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>ldd@qq.com</td>
+									<td>ldd</td>
+									<td>23</td>
+									<td>女</td>
+									<td>河南</td>
+									<td>123243445</td>
+									<td>
+										<a class="btn btn-info btn-xs">操作</a>
+										<a class="btn btn-warning btn-xs">删除</a>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>ldd@qq.com</td>
+									<td>ldd</td>
+									<td>23</td>
+									<td>女</td>
+									<td>河南</td>
+									<td>123243445</td>
+									<td>
+										<a class="btn btn-info btn-xs">操作</a>
+										<a class="btn btn-warning btn-xs">删除</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--底部分页组件-->
+					<ul class="pagination pull-right">
+						<li class="disabled">
+							<a href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li class="disabled">
+							<a href="#">上一页</a>
+						</li>
+						<li>
+							<a href="#" class="active">1</a>
+						</li>
+						<li>
+							<a href="#">2</a>
+						</li>
+						<li>
+							<a href="#">3</a>
+						</li>
+						<li>
+							<a href="#">4</a>
+						</li>
+						<li>
+							<a href="#">5</a>
+						</li>
+						<li>
+							<a href="#">下一页</a>
+						</li>
+						<li>
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		<script type="text/javascript" src="js/aside.js"></script>
+	</body>
+
+</html>
